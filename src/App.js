@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BallTriangle } from 'react-loader-spinner'
-
+import{My_Api_Key} from'./config';
 function App() {
   // Declare state for the result
   const [result, setResult] = useState({ originator: { name: '' }, content: '' });
@@ -12,7 +12,7 @@ function App() {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': 'd1f1e7417amsh841738df82ed756p1d1fbajsnc6af3c87d720',
+          'X-RapidAPI-Key': My_Api_Key,
           'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
         }
       };
